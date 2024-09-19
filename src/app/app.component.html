@@ -1,1 +1,23 @@
-<h1>Olá minha gente!</h1>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#">Paulo Sergio Padilha</a>
+
+      <button
+            (click)="colpsarNavbar = !colpsarNavbar"
+            class="navbar-toggler"
+            type="button"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" [ngClass]="{ show : colpsarNavbar }">
+        <div class="navbar-nav ms-auto">
+          <div class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Ínicio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
