@@ -102,7 +102,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "basehref": "",
+            "basehref": "https://psergiopadilha.github.io/meu-portifolio/",
             "repo": "https://github.com/psergioPadilha/meu-portifolio.git"
           }
         }
