@@ -1,0 +1,27 @@
+<section class="app-background-escuro-2 d-flex justify-content-center align-items-center" id="experiencias">
+    <div class="container">
+        <h2 class="display-5 fw-bold text-center">Experiências</h2>
+        
+        <div class="row flex-wrap justify-content-center g-3 mt-5">
+            <div *ngFor="let item of itensExperiencias" class="col">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <span class="rounded-pill text-bg-warning px-3">
+                            {{item.periodo}}
+                        </span>
+                        <br />
+                        <img class="my-3" src="" alt="">
+                        <br />
+                        <label>{{item.cargo}}</label>
+                    </div>
+
+                    <div class="card-body">
+                        <p>
+                            "{{item.descricao}}"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
