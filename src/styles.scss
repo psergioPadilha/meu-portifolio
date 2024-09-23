@@ -6,3 +6,55 @@
 
 @import "bootstrap";
 @import "bootstrap-icons";
+
+$cor-principal: #ec6afa;
+$cor-secundaria: #6d2bc2;
+$cor-background-1: #312d35;
+$cor-background-2: #242527;
+
+.app-texto-principal
+{
+    color: $cor-principal;
+}
+
+.app-hover-secundario
+{
+    &:hover
+    {
+        background-color: $cor-secundaria;
+    }
+}
+
+.app-background-principal
+{
+    background-color: $cor-principal;
+}
+
+.app-background-secundario
+{
+    background-color: $cor-secundaria;
+}
+
+.app-background-escuro
+{
+    background-color: $cor-background-1;
+}
+
+.app-background-escuro-2
+{
+    background-color: $cor-background-2;
+}
+
+#portfolio
+{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+section
+{
+    min-height: 100vh; // Determina o tamnho mínimo vertical de uma seção vh = view-height
+
+    padding-top: 2rem; // Adiciona uma margem a cima de cada seção (rem - relative to font-size of the root size - cada rem equivale 16 px)
+    padding-bottom: 2rem; // adiciona uma margem a baixo de cada seção
+}
